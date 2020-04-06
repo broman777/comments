@@ -1,8 +1,8 @@
 {
-  "name": "vue-vuex-registration-login-example",
+  "name": "comments-fe",
   "version": "1.0.0",
   "scripts": {
-    "start": "webpack --mode production && node api/server",
+    "start": "webpack --mode production",
     "dev": "webpack-dev-server --open"
   },
   "dependencies": {
