@@ -1,4 +1,5 @@
 import { commentService } from '../_services';
+import { router } from '../_helpers';
 
 const state = () => ({
     comments: []
@@ -12,12 +13,12 @@ const actions = {
                 error => commit('getAllFailure', error)
             );
     },
-    write({ dispatch, commit }, msg) {
-        commentService.write(msg)
+    write({ dispatch, commit }, data) {
+        commentService.write(data)
             .then(
                 msg => {
                     commit('writeSuccess', msg);
-                    router.push('/');
+                    router.go(0);
                     setTimeout(() => {
                         // display success message after route change completes
                         dispatch('alert/success', 'Writing successful', { root: true });

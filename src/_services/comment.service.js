@@ -17,11 +17,11 @@ function get() {
         });
 }
 
-function write(text) {
+function write(commentData) {
     const requestOptions = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(text)
+        body: JSON.stringify(commentData)
     };
 
     return fetch(`${config.apiUrl}/write`, requestOptions).then(handleResponse);
