@@ -1,5 +1,5 @@
 {
-  "name": "comments-fe",
+  "name": "comments",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack --mode production",
