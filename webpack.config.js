@@ -28,7 +28,7 @@ module.exports = {
     externals: {
         // global app config object
         config: JSON.stringify({
-            apiUrl: 'http://localhost:3000'
+            apiUrl: 'https://limitless-anchorage-32190.herokuapp.com/'
         })
     }
 }
